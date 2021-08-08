@@ -97,3 +97,30 @@ Conjugate descent, BFGS, L-BFGS
 6. 停用梯度检验（减少冗余计算），最小化$J(\theta)$
 ## 神经网络学习应用：自动驾驶
 
+# 2021.8.8
+吴恩达机器学习系列课程10.1-10.7
+## 学习算法评价
+### 数据集分割
+Training set: Test set = 7: 3
+<br>定义测试的误差函数：
+- $error(h_{\theta}(x), y) = 1$, if $h_{\theta}\geq 0.5, y = 0$ or $h_{\theta}(x) < 0.5, y = 1$
+- $error(h_{\theta}(x), y) = 0$, otherwise
+### 模型选择问题
+ 数据集分割：
+- Training set: 60%, 确定参数
+- Cross validation set(cv): 20%， 检验并选择代价最小的模型
+- Test set: 20%， 评估，计算泛化误差
+### 正则化与高偏差/高方差
+正则化参数$\lambda$:
+- $\lambda$较大：对参数惩罚较重，可能导致拟合效果不好
+- $\lambda$较小：惩罚较小，易导致过拟合
+### 利用学习曲线调整模型
+1. 高方差错误：
+- 更大的训练集
+- 更少的特征
+- 减小正则化系数$\lambda$
+2. 高偏差错误：
+- 更多的特征
+- 增加多项式次数
+- 增大正则化系数$\lambda$
+  

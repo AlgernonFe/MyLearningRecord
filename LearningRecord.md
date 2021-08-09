@@ -123,4 +123,16 @@ Training set: Test set = 7: 3
 - 更多的特征
 - 增加多项式次数
 - 增大正则化系数$\lambda$
+# 2021.8.9
+吴恩达机器学习系列课程10.1-10.5
+## 监督学习
+## 偏斜类问题算法评估
+正负样本的数量接近极端时，产生偏斜类问题
+<br>使用查准率(Precision)和召回率(Recall)确定算法的合理性
+### 查准率与召回率
+- Precision = $\frac{True Positive}{True Positive + False Positive}$, 表明预测的准确率
+- Recall = $\frac{True Positive}{True Positive + True Negative}$，表明对当前情况做出正确判断的概率
+### 结合查准率与召回率进行评估
+F score = $2*\frac{Precision*Recall}{Precision + Recall}$
+<br>选择F值更大的算法
   

@@ -135,4 +135,20 @@ Training set: Test set = 7: 3
 ### 结合查准率与召回率进行评估
 F score = $2*\frac{Precision*Recall}{Precision + Recall}$
 <br>选择F值更大的算法
+# 2021.8.10
+吴恩达机器学习系列课程12.1-12.6
+## 支持向量机SVM
+Support Vector Machine, 从logistic regression推导出支持向量机的的代价函数，在不适用核函数的情况下与logistic regression相似，也成为大间距分离器
+- SVM目标优化函数：$min_{\theta}\frac{1}{2}\sum^n_{j = 1}\theta_j^2$
+- SVM使用大间隔分离数据，具有鲁棒性
+## 核函数 Kernels
+学习非线性边界
+## SVM的偏差/方差折中
+- 不使用正则化：低偏差，高方差
+- 使用正则化：高偏差，低方差
+## 高斯核函数
+- $\sigma$较大：更平滑的Gauss曲线
+- $\sigma$较小：更陡峭的Gauss曲线
+## SVM的实现和内核/算法选择
+
   
